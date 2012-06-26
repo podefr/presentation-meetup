@@ -133,9 +133,31 @@ body     { pointer-events: none; }
 	font-size: 48px;
 }
 
+.present.rotating {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform:    rotate(-10deg);
+    -ms-transform:     rotate(-10deg);
+    -o-transform:      rotate(-10deg);
+    transform:         rotate(-10deg);
+    
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay:    0.25s;
+    -ms-transition-delay:     0.25s;
+    -o-transition-delay:      0.25s;
+    transition-delay:         0.25s;
+}
+
+#meetup-examples li img {
+	visibility: hidden;
+}
+
+#meetup-examples li.present img {
+	visibility: visible;
+}
+
 /* fade out inactive slides */
 .step:not(.active) {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 /* STEP SPECIFIC STYLES */
