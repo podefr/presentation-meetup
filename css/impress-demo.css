@@ -147,13 +147,14 @@ body     { pointer-events: none; }
     transition-delay:         0.25s;
 }
 
-#meetup-examples li img {
+#meetup-examples li img, #meetup-examples li video {
 	visibility: hidden;
 }
 
-#meetup-examples li.present img {
+#meetup-examples li.present img, #meetup-examples li.present video {
 	visibility: visible;
 }
+
 
 /* fade out inactive slides */
 .step:not(.active) {
