@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Qu'est-ce que meetup? Pour Alsace Web</title>
+    
+    <meta name="description" content="Présentation de Meetup et du meetup Alsace web" />
+    <meta name="author" content="Olivier Scherrer" />
+
+   <link href='http://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <script>
+    	window.addEventListener("load", function onLoad() {
+    		
+    		var video = document.querySelector("video");
+    		
+    		if (navigator.webkitGetUserMedia) {
+    			navigator.webkitGetUserMedia({video:true}, function (stream) {
+        			video.src = window.webkitURL.createObjectURL(stream); 
+    			}, function (err) {
+    				console.log(err, ":()");
+    			});
+    		}
+
+    	}, true);
+    </script>
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+ 	<div id="qui" class="step title" data-x="0" data-y="0">
+ 		Bienvenue au premier meetup<br /> Strasbourg Web
+ 	</div>
+ 	
+ 	<div id="moi" class="step title" data-x="1000" data-y="1000" data-scale="2">
+ 		Qui suis-je?
+ 	</div>
+ 	
+ 	<ul>
+ 	
+ 		<li id="nom" class="step" data-x="700" data-y="1000" data-rotate="90">
+	 		Olivier Scherrer, Strasbourgeois
+	 	</li>
+	 	
+	 	 <li id="xp" class="step" data-x="800" data-y="1000" data-rotate="90">
+	 		Premier site web en 1998
+	 	</li>
+ 	
+	 	<li id="boulot" class="step" data-x="900" data-y="1000" data-rotate="90">
+	 		Software Engineer @ Alcatel-Lucent depuis 2009
+	 	</li>
+ 	
+	 	<li id="olives" class="step" data-x="1000" data-y="1000" data-rotate="90">
+	 		Auteur de Olives et Emily, frameworks JS pour applications HTML5 temps réel
+	 	</li>
+	 	
+	 	<li id="taiaut" class="step" data-x="1100" data-y="1000" data-rotate="90">
+	 		Co-fondateur de Taiaut, une entreprise de management de l'innovation
+	 	</li>
+	 	
+	 	<li id="alsaceweb" class="step" data-x="1200" data-y="1000" data-rotate="90">
+	 		Initiateur du meetup Alsace Web
+	 	</li>
+
+    </ul>
+    
+    <div id="meetup" class="step title" data-x="2500" data-y="0" data-rotate-y="90" data-rotate-x="90">
+    	Qu'est-ce qu'un meetup?
+    </div>
+    
+    <ul>
+        <li class="step" data-x="2500" data-y="0" data-z="100" data-rotate-y="90" data-rotate-x="90">
+    		Le plus grand réseau de groupes locaux. Facilite l'organisation de groupes et la rencontre entre personnes partageant un intérêt commun.
+    	</li>
+    	<li class="step" data-x="2500" data-y="0" data-z="200" data-rotate-y="90" data-rotate-x="90">
+    		11 millions de membres
+    	</li>
+    	<li class="step" data-x="2500" data-y="0" data-z="300" data-rotate-y="90" data-rotate-x="90">
+    		340 000 rencontres mensuelles
+    	</li>
+    	<li class="step" data-x="2500" data-y="0" data-z="400" data-rotate-y="90" data-rotate-x="90">
+    		105 000 groupes
+    	</li>
+    	<li class="step" data-x="2500" data-y="0" data-z="500" data-rotate-y="90" data-rotate-x="90">
+    		45 000 villes ont des groupes meetups
+    	</li>
+    	<li class="step" data-x="2500" data-y="0" data-z="600" data-rotate-y="90" data-rotate-x="90">
+    		<span class="">0 à Strasbourg</span>
+    	</li>
+    </ul>
+    
+    <ul id="meetup-examples">
+    	<li class="step" data-x="1000" data-y="3000" data-rotate-y="90" data-rotate-x="90" data-rotate-z="-90">
+    		The NYC JavaScript & HTML5 Monthly Hackfest <br />
+    		<img src="img/nyc-js.jpg" />
+    	</li>
+    	
+    	 <li class="step" data-x="1200" data-y="3000" data-rotate-y="90" data-rotate-x="90" data-rotate-z="-90">
+    		 NYC Startup Networking Event <br />
+    		<img src="img/entrepreneurs.jpg" />
+    	</li>
+    	
+    	<li class="step" data-x="1400" data-y="3000"  data-rotate-y="90" data-rotate-x="90" data-rotate-z="-90">
+    		 Cuisine à Paris - Cours de cuisine Japonaise <br />
+    		<img src="img/paris-cuisine.jpg" />
+    	</li>
+    	
+    	<li class="step" data-x="1600" data-y="3000" data-rotate-y="90" data-rotate-x="90" data-rotate-z="-90">
+    		 Strasbourg Web <br />
+    		<video width="600" height="450" autoplay>
+    			Sorry only Chrome >22 supported atm
+    		</video>
+    	</li>
+    </ul>
+    
+    <div id="pourquoi-alsace-web">
+    	<!-- rencontrer des gens du web en alsace -->
+    </div>
+    
+    <div id="ou">
+    	<!--  Ou ça? Nimporte ou-->
+    </div>
+    
+    <div id="quand">
+    	<!--  Nimporte -->
+    </div>
+
+	<div id="qui">
+		<!-- Tout le monde peut participer -->
+	</div>
+	
+	<div id="merci">
+		<!--  merci d'avoir suivi -->
+		<!--  Twitter -->
+		<!--  Meetup alsace web -->
+		<!--  Retrouvez la présentation sur github, faite avec impress.js-->
+	</div>
+    
+    
+    
+    <div id="overview" class="step sub" data-x="3000" data-y="1500" data-scale="10">
+	</div>
+
+</div>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
