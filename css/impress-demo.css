@@ -133,12 +133,13 @@ body     { pointer-events: none; }
 	font-size: 48px;
 }
 
-.present.rotating {
-    -webkit-transform: rotate(-10deg);
-    -moz-transform:    rotate(-10deg);
-    -ms-transform:     rotate(-10deg);
-    -o-transform:      rotate(-10deg);
-    transform:         rotate(-10deg);
+.present .rotating {
+	display: block;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform:    rotate(-5deg);
+    -ms-transform:     rotate(-5deg);
+    -o-transform:      rotate(-5deg);
+    transform:         rotate(-5deg);
     
     -webkit-transition-delay: 0.25s;
     -moz-transition-delay:    0.25s;
@@ -147,11 +148,11 @@ body     { pointer-events: none; }
     transition-delay:         0.25s;
 }
 
-#meetup-examples li img {
+#meetup-examples li img, #meetup-examples li video {
 	visibility: hidden;
 }
 
-#meetup-examples li.present img {
+#meetup-examples li.present img, #meetup-examples li.present video {
 	visibility: visible;
 }
 
